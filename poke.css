@@ -1,3 +1,8 @@
+@font-face {
+    font-family: PokeFont;
+    src: url(PokeFont.ttf);
+}
+
 nav {
   width: 100%;
   overflow: hidden;
@@ -29,4 +34,114 @@ nav a {
 nav a:hover {
   background: black;
   color: white;
+}
+
+main {
+  width: 100%;
+  height: 735px;
+  background-color: black;
+  padding-top: 150px;
+}
+
+.bg1 {
+  width: 100%;
+  height: 735px;
+  background-color: black;
+  padding-top: 150px;
+}
+.bg2 {
+  width: 100%;
+  height: 735px;
+  background-color: black;
+  padding-top: 150px;
+}
+.container {
+  width: 100%;
+  height: 550px;
+background-image: url(http://getwallpapers.com/wallpaper/full/7/8/2/1099174-free-download-piplup-wallpaper-1920x1080-photo.jpg);
+}
+.container2 {
+  width: 100%;
+  height: 550px;
+  background-image: url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg);
+}
+.container3 {
+  width: 100%;
+  height: 550px;
+  background-image: url(https://pre00.deviantart.net/e74b/th/pre/f/2013/319/1/b/empoleon_by_poketrainermanro-d6ud6q8.png);
+}
+
+#bgi img {
+  height: 150px;
+  margin: 130px;
+}
+
+.box {
+  width: 410px;
+  height: 100px;
+  margin-left: 71px;
+}
+
+#bgi {
+  background-image: url(https://img00.deviantart.net/2e66/i/2013/357/f/b/water_background_by_archiexaffier-d6z5otz.png);
+  width: 400px;
+  height: 350px;
+  margin: 20px 0px 10px 75px;
+
+}
+
+.bg1 {
+  width: 100%;
+  height: 735px;
+  background-color: black;
+  padding-top: 150px;
+
+}
+
+
+#desc {
+    position: absolute;
+    bottom: 90px;
+    left: 110px;
+    color: black;
+    font-size: 17px;
+    font-family: PokeFont;
+}
+
+#nickname {
+  padding: 40px 20px 0px 200px;
+}
+
+#desc2 {
+    position: absolute;
+    top: 1513px;
+    left: 110px;
+    color: black;
+    font-size: 17px;
+    font-family: PokeFont;
+}
+
+#nickname2 {
+  padding: 40px 20px 0px 200px;
+}
+
+#desc3 {
+    position: absolute;
+    top: 2195px;
+    left: 110px;
+    color: black;
+    font-size: 17px;
+    font-family: PokeFont;
+}
+
+#nickname3 {
+  padding: 40px 20px 0px 200px;
+}
+
+.info {
+  border: double black 10px;
+  width: 400px;
+  height: 530px;
+  float: right;
+
 }

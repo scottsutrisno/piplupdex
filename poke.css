@@ -271,13 +271,13 @@ button {
     opacity: 0;
   }
   10% {
-    opacity: 0.6;
+    opacity: 0;
   }
   12% {
     opacity: 0;
   }
   15% {
-    opacity: 0.6;
+    opacity: 0;
   }
   17% {
     opacity: 0;
@@ -387,7 +387,7 @@ button {
 
 .evolve {
   animation-name: evolution;
-  animation-duration: 8.7s;
+  animation-duration: 7s;
   animation-fill-mode: forwards;
 }
 
@@ -400,16 +400,16 @@ button {
     opacity: 1;
   }
   10% {
-    opacity: 0;
-  }
-  15% {
-    opacity: 0.9;
-  }
-  20% {
     opacity: 1;
   }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
   25% {
-    opacity: 0.8;
+    opacity: 1;
   }
   30% {
     opacity: 0;
@@ -462,6 +462,6 @@ button {
 
 .evolve2 {
   animation-name: evolution2;
-  animation-duration: 8.7s;
+  animation-duration: 7s;
   animation-fill-mode: forwards;
 }

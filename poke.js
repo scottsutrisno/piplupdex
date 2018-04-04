@@ -149,7 +149,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
       myMsg.innerHTML = myInput.value + " is evolving!"
 
 
-setTimeout(changeToPrinplup, 8150); //stackoverflow showed me how to delay a function
+setTimeout(changeToPrinplup, 7130); //stackoverflow showed me how to delay a function
       function changeToPrinplup () {
 
 prinBackground.style["background-image"] = 'url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg)';

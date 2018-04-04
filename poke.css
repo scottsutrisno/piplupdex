@@ -1,12 +1,12 @@
 @font-face {
-    font-family: PokeFont;
-    src: url(PokeFont.ttf);
+  font-family: PokeFont;
+  src: url(PokeFont.ttf);
 }
 
 nav {
   width: 100%;
   overflow: hidden;
-  background-color: rgb(74, 112, 226);
+  background-color: black;
   position: fixed;
 }
 
@@ -20,20 +20,55 @@ nav li {
   float: right;
 }
 
-nav a {
+#nv1 {
+  margin: 3px 40px 5px 0px;
+  padding: 20px 15px 20px 15px;
   width: 120px;
   display: block;
   text-decoration: none;
   text-align: center;
-  font-size: 18px;
-  color: black;
-  margin: 3px 40px 5px 0px;
-  padding: 20px 15px 20px 15px;
+  font-family: PokeFont;
+  font-size: 12px;
+  color: white;
 }
 
-nav a:hover {
-  background: black;
+#nv1:hover {
+  background: rgb(25, 45, 152);
+  color: black;
+}
+
+#nv2 {
+  margin: 3px 40px 5px 0px;
+  padding: 20px 15px 20px 15px;
+  width: 120px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: PokeFont;
+  font-size: 12px;
   color: white;
+}
+
+#nv2:hover {
+  background: rgb(46, 101, 182);
+  color: black;
+}
+
+#nv3 {
+  margin: 3px 40px 5px 0px;
+  padding: 20px 15px 20px 15px;
+  width: 120px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: PokeFont;
+  font-size: 12px;
+  color: white;
+}
+
+#nv3:hover {
+  background: rgb(0, 255, 240);
+  color: BLACK;
 }
 
 main {
@@ -49,29 +84,36 @@ main {
   background-color: black;
   padding-top: 150px;
 }
+
 .bg2 {
   width: 100%;
   height: 735px;
   background-color: black;
   padding-top: 150px;
 }
+
 .container {
+  background-size: 1100px 600px;
   width: 100%;
   height: 550px;
-background-image: url(http://getwallpapers.com/wallpaper/full/7/8/2/1099174-free-download-piplup-wallpaper-1920x1080-photo.jpg);
+  background-image: url(http://getwallpapers.com/wallpaper/full/7/8/2/1099174-free-download-piplup-wallpaper-1920x1080-photo.jpg);
 }
+
 .container2 {
+  background-size: 1100px 600px;
   width: 100%;
   height: 550px;
   background-image: url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg);
 }
+
 .container3 {
+  background-size: 1100px 600px;
   width: 100%;
   height: 550px;
-  background-image: url(https://pre00.deviantart.net/e74b/th/pre/f/2013/319/1/b/empoleon_by_poketrainermanro-d6ud6q8.png);
+  background-image: url(https://pokewalls.files.wordpress.com/2012/12/395empoleon1920x1200.jpg);
 }
 
-#bgi img {
+.bgi img {
   height: 150px;
   margin: 130px;
 }
@@ -80,14 +122,24 @@ background-image: url(http://getwallpapers.com/wallpaper/full/7/8/2/1099174-free
   width: 410px;
   height: 100px;
   margin-left: 71px;
+  bottom: 205px;
+  position: relative;
 }
 
-#bgi {
-  background-image: url(https://img00.deviantart.net/2e66/i/2013/357/f/b/water_background_by_archiexaffier-d6z5otz.png);
-  width: 400px;
-  height: 350px;
-  margin: 20px 0px 10px 75px;
+.bgi img {
+  width: 150px;
+  height: 140px;
+  margin: 200px 0px 10px 125px;
+}
 
+#bgi2 img {
+  width: 230px;
+  height: 180px;
+  bottom: 235px;
+  left: 155px;
+  position: relative;
+  z-index: 1;
+  opacity: 0 ;
 }
 
 .bg1 {
@@ -95,23 +147,29 @@ background-image: url(http://getwallpapers.com/wallpaper/full/7/8/2/1099174-free
   height: 735px;
   background-color: black;
   padding-top: 150px;
-
 }
 
-
 #desc {
-    position: absolute;
-    bottom: 90px;
-    left: 110px;
-    color: black;
-    font-size: 17px;
-    font-family: PokeFont;
+  position: relative;
+  bottom: 297px;
+  left: 110px;
+  color: black;
+  font-size: 17px;
+  font-family: PokeFont;
 }
 
 #nickname {
   padding: 40px 20px 0px 200px;
 }
 
+.background {
+  background-image: url(https://img00.deviantart.net/2e66/i/2013/357/f/b/water_background_by_archiexaffier-d6z5otz.png);
+  width: 400px;
+  height: 400px;
+  margin-left: 75px;
+}
+
+/*
 #desc2 {
     position: absolute;
     top: 1513px;
@@ -136,12 +194,202 @@ background-image: url(http://getwallpapers.com/wallpaper/full/7/8/2/1099174-free
 
 #nickname3 {
   padding: 40px 20px 0px 200px;
-}
+
+} */
 
 .info {
-  border: double black 10px;
   width: 400px;
   height: 530px;
   float: right;
+  font-size: 24px;
+  font-family: PokeFont;
+  opacity: 0.75;
+}
 
+.info h1 {
+  font-size: 26px;
+}
+
+.info h2 {
+  font-size: 20px;
+  border-bottom: 15px solid black;
+  width: 210px;
+}
+
+.info h3 {
+  font-size: 20px;
+  border-bottom: 15px solid black;
+  width: 180px;
+}
+
+.info h4 {
+  font-size: 20px;
+  border-bottom: 15px solid black;
+  width: 210px;
+}
+
+button {
+  font-family: PokeFont;
+  font-size: 8px;
+  padding: 5px 4px 4px 4px;
+}
+
+#username {
+  color: black;
+  font-family: Pokefont;
+  font-size: 8px;
+}
+
+
+#evo {
+  float: right;
+  margin: 275px 450px 0px 0px;
+}
+
+@keyframes evolution {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.6;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.6;
+  }
+  20% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.6;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0;
+  }
+
+  55% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.evolve {
+  animation-name: evolution;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes evolution2 {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.9;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0;
+  }
+
+  55% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.0;
+
+  }
+}
+
+.evolve2 {
+  animation-name: evolution2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
 }

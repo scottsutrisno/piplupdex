@@ -11,29 +11,59 @@
 
 
 <body>
+
+
+
+
+
   <header>
     <nav>
       <ul>
-        <li><a href="alskdj">EMPOLEON</a></li>
-        <li><a href="alskdj">PRINPLUP</a></li>
-        <li><a href="alskdj">PIPLUP</a></li>
+        <li><a id="nv1" href="alskdj">EMPOLEON</a></li>
+        <li><a id="nv2" href="alskdj">PRINPLUP</a></li>
+        <li><a id="nv3" href="alskdj">PIPLUP</a></li>
       </ul>
     </nav>
   </header>
 
+
+
+
+
+
+
+
+
   <main>
     <section class="container">
-      <div class="info"></div>
-      <div class="info"></div>
+      <div class="info">
+        <h1>STATS:</h1>
+        <h2>HP:</h2>
+        <div id="piplup-hp"></div>
+        <h3>Attack:</h3>
+        <div id="piplup-attack"></div>
+        <h4>Defense:</h4>
+        <div id="piplup-defense"></div>
+        <h1>ABILITIES:</h1>
+        <div id="piplup-abilities"></div>
+      </div>
+
+      <button id="evo">Level 16</button>
 
       <div id="nickname">
         <input id="username" type="text" name="username">
-        <button id="btn">Enter A Nickname!</button>
-     </div>
+        <button id="btn">Submit</button>
+      </div>
 
-      <button class="btn1">Level 16</button>
-      <div id="bgi"><img src="https://vignette.wikia.nocookie.net/pokemon/images/9/94/Piplup_XY.gif/revision/latest?cb=20140131083332" alt=""></div>
+
+      <div class="background">
+        <div class="bgi"><img id="evoImage2" src="https://vignette.wikia.nocookie.net/pokemon/images/9/94/Piplup_XY.gif/revision/latest?cb=20140131083332" alt=""></div>
+      </div>
+
+      <div id="bgi2"><img id="evoImage" src="https://vignette.wikia.nocookie.net/pokemon/images/2/2c/Prinplup_XY.gif/revision/latest?cb=20141113051639" alt=""></div>
+
       <div><img class="box" src="http://lovelstzy.com/wp-content/uploads/2017/04/pokemon-text-box-clear.png" alt="">
+
         <p id="desc">What? Piplup <br><br> is Evolving!</p>
       </div>
 
@@ -42,9 +72,27 @@
 
 
 
+
+
+
+
+
+
+
+  <!-- unnecessary -->
+
+
+  <!--
 <section class="bg1">
   <section class="container2">
-    <div class="info"></div>
+    <div class="info">
+      <div class="info">
+        <div id="prinplup-hp"></div>
+        <div id="prinplup-attack"></div>
+        <div id="prinplup-defense"></div>
+        <div id="prinplup-abilities"></div>
+     </div>
+    </div>
     <div class="info"></div>
 
     <div id="nickname2">
@@ -52,7 +100,7 @@
       <button class="btn">Enter A Nickname!</button>
    </div>
 
-    <button class="btn1">Level 16</button>
+    <button class="btn1">Level 32</button>
     <div id="bgi"><img src="https://vignette.wikia.nocookie.net/pokemon/images/2/2c/Prinplup_XY.gif/revision/latest?cb=20141113051639" alt=""></div>
     <div><img class="box" src="http://lovelstzy.com/wp-content/uploads/2017/04/pokemon-text-box-clear.png" alt="">
       <p id="desc2">What? Prinplup <br><br> is Evolving!</p>
@@ -60,9 +108,26 @@
 
   </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="bg2">
   <section class="container3">
-    <div class="info"></div>
+    <div class="info">  <div class="info">
+        <div id="empoleon-hp"></div>
+        <div id="empoleon-attack"></div>
+        <div id="empoleon-defense"></div>
+        <div id="empoleon-abilities"></div>
+     </div></div>
     <div class="info"></div>
 
     <div id="nickname3">
@@ -76,12 +141,12 @@
       <p id="desc3">Prinplup Evolved<br><br> into Empoleon!</p>
     </div>
 
-  </section>
+  </section> -->
 
 
 
 
-  <script src=""></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="poke.js"></script>
 </body>
 

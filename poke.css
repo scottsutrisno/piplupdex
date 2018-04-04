@@ -3,7 +3,7 @@
   src: url(PokeFont.ttf);
 }
 
-/* nav {
+nav {
   width: 100%;
   overflow: hidden;
   background-color: black;
@@ -69,7 +69,7 @@ nav li {
 #nv3:hover {
   background: rgb(0, 255, 240);
   color: BLACK;
-} */
+}
 
 
 main {
@@ -212,7 +212,7 @@ button {
   font-family: Pokefont;
   font-size: 8px;
   height: 14px;
-  
+
 }
 
 
@@ -258,62 +258,126 @@ button {
   0% {
     opacity: 0;
   }
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+  }
   5% {
-    opacity: 0.6;
+    opacity: 0;
+  }
+  7% {
+    opacity: 0;
   }
   10% {
+    opacity: 0.6;
+  }
+  12% {
     opacity: 0;
   }
   15% {
     opacity: 0.6;
   }
-  20% {
+  17% {
     opacity: 0;
   }
+  20% {
+    opacity: 0.7;
+  }
+  22% {
+    opacity: 0;
+  }
+
   25% {
-    opacity: 0.6;
+    opacity: 0.7;
+  }
+  27% {
+    opacity: 0;
   }
   30% {
+    opacity: 0.7;
+  }
+  32% {
     opacity: 0;
   }
   35% {
-    opacity: 0.6;
+    opacity: 0.8;
+  }
+  37% {
+    opacity: 0;
   }
   40% {
+    opacity: 0.9;
+  }
+  42% {
     opacity: 0;
   }
   45% {
-    opacity: 0.7;
+    opacity: 1;
+  }
+  47% {
+    opacity: 1;
   }
   50% {
     opacity: 0;
   }
-
+  52% {
+    opacity: 0.6;
+  }
   55% {
-    opacity: 0.7;
+    opacity: 0;
+  }
+  57% {
+    opacity: 0.6;
   }
   60% {
     opacity: 0;
   }
+  62% {
+    opacity: 0.6;
+  }
   65% {
-    opacity: 0.7;
+    opacity: 0;
+  }
+  67% {
+    opacity: 0.6;
   }
   70% {
     opacity: 0;
   }
+  72% {
+    opacity: 0.7;
+  }
   75% {
-    opacity: 0.8;
+    opacity: 0;
+  }
+
+  77% {
+    opacity: 0.7;
   }
   80% {
     opacity: 0;
   }
+  82% {
+    opacity: 0.7;
+  }
   85% {
-    opacity: 0.9;
+    opacity: 0;
+  }
+  87% {
+    opacity: 0.8;
   }
   90% {
     opacity: 0;
   }
+  93% {
+    opacity: 0.9;
+  }
   95% {
+    opacity: 0;
+  }
+  97% {
     opacity: 1;
   }
   100% {
@@ -323,7 +387,7 @@ button {
 
 .evolve {
   animation-name: evolution;
-  animation-duration: 4s;
+  animation-duration: 8.5s;
   animation-fill-mode: forwards;
 }
 
@@ -333,10 +397,10 @@ button {
     opacity: 1;
   }
   5% {
-    opacity: 0.9;
+    opacity: 1;
   }
   10% {
-    opacity: 1;
+    opacity: 0;
   }
   15% {
     opacity: 0.9;
@@ -398,6 +462,6 @@ button {
 
 .evolve2 {
   animation-name: evolution2;
-  animation-duration: 4s;
+  animation-duration: 8.5s;
   animation-fill-mode: forwards;
 }

@@ -143,13 +143,13 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     let tunes = document.getElementById("myAudio");
     evolveButton.addEventListener("click", (event) => {
 
-
+      tunes.play();
       evoImage.classList.add("evolve");
       evoImage2.classList.add("evolve2");
       myMsg.innerHTML = myInput.value + " is evolving!"
-      tunes.play();
 
-setTimeout(changeToPrinplup, 3800);
+
+setTimeout(changeToPrinplup, 8150);
       function changeToPrinplup () {
 
 prinBackground.style["background-image"] = 'url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg)';

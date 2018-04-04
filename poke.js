@@ -141,6 +141,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     let evoImage = document.querySelector('#evoImage')
     let evoImage2 = document.querySelector('#evoImage2')
     let power = document.querySelector('.info')
+    let prinBackground = document.querySelector('.container')
     evolveButton.addEventListener("click", (event) => {
 
 
@@ -149,7 +150,10 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 
 setTimeout(changeToPrinplup, 4000);
       function changeToPrinplup () {
+
+prinBackground.style["background-image"] = 'url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg)';;
 myMsg.innerHTML = "Piplup evolved" + "<br><br> into Prinplup!";
+
       }
     })
 

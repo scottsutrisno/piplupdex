@@ -43,7 +43,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
         data.stats[4].base_stat,
         data.stats[3].base_stat,
     )
-    data.abilities.forEach((item) => {
+    data.abilities.forEach((item, addAbility) => {
         piplup.addAbility(item.ability.name)
         abilities.innerHTML += item.ability.name + "<br>"
     })
@@ -74,7 +74,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
         data.stats[4].base_stat,
         data.stats[3].base_stat,
     )
-    data.abilities.forEach((item) => {
+    data.abilities.forEach((item, addAbility) => {
         prinplup.addAbility(item.ability.name)
         abilities.innerHTML += item.ability.name +"<br>"
     })
@@ -103,7 +103,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
           data.stats[4].base_stat,
           data.stats[3].base_stat,
       )
-      data.abilities.forEach((item) => {
+      data.abilities.forEach((item, addAbility) => {
           empoleon.addAbility(item.ability.name)
           abilities.innerHTML += item.ability.name +"<br>"
       })
@@ -117,7 +117,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 
 
 
-//nickname button!
+//nickname button!//
 
 
     let myBtn = document.querySelector("#btn");
@@ -133,7 +133,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     }
 
 
-
+    // EVOLVE BUTTON //
 
     let evolveButton = document.querySelector('#evo')
     let evoImage = document.querySelector('#evoImage')
@@ -149,7 +149,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
       myMsg.innerHTML = myInput.value + " is evolving!"
 
 
-setTimeout(changeToPrinplup, 8150);
+setTimeout(changeToPrinplup, 8150); //stackoverflow showed me how to delay a function
       function changeToPrinplup () {
 
 prinBackground.style["background-image"] = 'url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg)';

@@ -24,16 +24,21 @@ class Scott{
 let scooter = new Scott()
 
 
+
+let hp = document.getElementById("piplup-hp")
+let attack = document.getElementById("piplup-attack")
+let defense = document.getElementById("piplup-defense")
+
+
+
+
 axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 .then((response) => {
     let data = response.data
-    let hp = document.getElementById("piplup-hp")
-    let attack = document.getElementById("piplup-attack")
-    let defense = document.getElementById("piplup-defense")
     let abilities = document.getElementById("piplup-abilities")
 
     let piplup = new Pokemon(
-        data.name,
+        data.name, //WHY?
         data.stats[5].base_stat,
         data.stats[4].base_stat,
         data.stats[3].base_stat,
@@ -121,54 +126,43 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 
     myBtn.addEventListener("click", myFunction);
     function myFunction() {
-      myMsg.innerHTML = "What? " + myInput.value + "<br><br> is Evolving!";
+      myMsg.innerHTML = "WHATS going on guys, <br><br> its ya boi " + myInput.value
+      // "What? " + myInput.value + "<br><br> is Evolving!";
 
 
     }
 
 
-    // let evolveButton = document.querySelector("#evo")
-    // let bgi2 = document.querySelector("#bgi")
-    // evolveButton.addEventListener("click", evoFunction);
-    // function evoFunction() {
-    //
-    // bgi2.id = "#bgi2"
-    //
-    //
-    // }
+
 
     let evolveButton = document.querySelector('#evo')
     let evoImage = document.querySelector('#evoImage')
     let evoImage2 = document.querySelector('#evoImage2')
     let power = document.querySelector('.info')
     let prinBackground = document.querySelector('.container')
+    let tunes = document.getElementById("myAudio");
     evolveButton.addEventListener("click", (event) => {
 
 
       evoImage.classList.add("evolve");
       evoImage2.classList.add("evolve2");
+      myMsg.innerHTML = myInput.value + " is evolving!"
+      tunes.play();
 
-setTimeout(changeToPrinplup, 4000);
+setTimeout(changeToPrinplup, 3800);
       function changeToPrinplup () {
 
-prinBackground.style["background-image"] = 'url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg)';;
-myMsg.innerHTML = "Piplup evolved" + "<br><br> into Prinplup!";
+prinBackground.style["background-image"] = 'url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg)';
+myMsg.innerHTML = myInput.value + " evolved" + "<br><br> into Prinplup!";
+evolveButton.innerHTML = "Level 32";
+tunes.pause();
+hp.id = "prinplup-hp";
+attack.id = "prinplup-attack";
+defense.id = "prinplup-defense";
+//Changes ID to prinplup but the value on the page stays the same
 
-      }
+
+}
+
+
     })
-
-
-
-
-
-
-
-
-
-
-
-//
-// let evolve = document.querySelector(".evo")
-//
-// myBtn.addEventListener("click", myFunction);
-// function myFunction() {

@@ -3,7 +3,7 @@
   src: url(PokeFont.ttf);
 }
 
-nav {
+/* nav {
   width: 100%;
   overflow: hidden;
   background-color: black;
@@ -69,7 +69,8 @@ nav li {
 #nv3:hover {
   background: rgb(0, 255, 240);
   color: BLACK;
-}
+} */
+
 
 main {
   width: 100%;
@@ -151,7 +152,7 @@ main {
 #desc {
   position: relative;
   bottom: 297px;
-  left: 110px;
+  left: 100px;
   color: black;
   font-size: 17px;
   font-family: PokeFont;
@@ -168,33 +169,6 @@ main {
   margin-left: 75px;
 }
 
-/*
-#desc2 {
-    position: absolute;
-    top: 1513px;
-    left: 110px;
-    color: black;
-    font-size: 17px;
-    font-family: PokeFont;
-}
-
-#nickname2 {
-  padding: 40px 20px 0px 200px;
-}
-
-#desc3 {
-    position: absolute;
-    top: 2195px;
-    left: 110px;
-    color: black;
-    font-size: 17px;
-    font-family: PokeFont;
-}
-
-#nickname3 {
-  padding: 40px 20px 0px 200px;
-
-} */
 
 .info {
   width: 400px;
@@ -237,12 +211,47 @@ button {
   color: black;
   font-family: Pokefont;
   font-size: 8px;
+  height: 14px;
+  
 }
 
 
 #evo {
   float: right;
-  margin: 275px 450px 0px 0px;
+  margin: 255px 470px 0px 0px;
+  height: 60px;
+  border-radius: 50px;
+  animation-duration: 1s;
+}
+
+#evo:hover {
+  animation-name: bounce;
+}
+
+@keyframes bounce {
+	20% {
+
+		transform:         translateY(0px)
+	}
+	40% {
+
+		transform:         translateY(-15px)
+	}
+	60% {
+
+		transform:         translateY(0px)
+
+	}
+  80% {
+
+		transform:         translateY(-10px)
+	}
+	100% {
+
+		transform:         translateY(0px)
+
+	}
+
 }
 
 @keyframes evolution {

@@ -194,7 +194,7 @@ buttonDesc.innerHTML = "LVL 32!"
 
 
     evolveButton2.addEventListener("click", (event) => {
-
+      tunes.currentTime = 0;
       tunes.play();
       evoImage.classList.add("evolve2");
       evoImage3.classList.add("evolve");
@@ -211,6 +211,8 @@ tunes.pause();
 
 empoleonStats.classList.add("fadeIn");
 prinplupStats.classList.add("fadeOut");
+evolveButton2.style.zIndex = "-1";
+buttonDesc.innerHTML = ""
 
 
 }

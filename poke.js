@@ -31,8 +31,10 @@ let attack = document.getElementById("piplup-attack")
 let defense = document.getElementById("piplup-defense")
 
 
+// PIPLUP //
 
-function pip() {
+
+
 axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 .then((response) => {
     let data = response.data
@@ -57,12 +59,12 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     console.log(error)
   })
 
-}
-
-pip();
-//PIPLUP
 
 
+
+
+
+// PRINPLUP //
 
 
   axios.get("https://pokeapi.co/api/v2/pokemon/394/")
@@ -90,11 +92,13 @@ pip();
     console.log(error)
   })
 
-//PRINPLUP
 
 
 
-function emp() {
+// EMPOLEON //
+
+
+
   axios.get("https://pokeapi.co/api/v2/pokemon/395/")
   .then((response) => {
       let data = response.data
@@ -120,11 +124,11 @@ function emp() {
       console.log(error)
     })
 
-  }
+  
 
-  emp();
 
-//nickname button!//
+
+// NICKNAME //
 
 
     let myBtn = document.querySelector("#btn");
@@ -134,27 +138,16 @@ function emp() {
     myBtn.addEventListener("click", myFunction);
     function myFunction() {
       myMsg.innerHTML = "WHATS going on guys, <br><br> its ya boi " + myInput.value
-      // "What? " + myInput.value + "<br><br> is Evolving!";
-
 
     }
+
+
 
 
     // EVOLVE BUTTON //
 
 
-
-// let pokearray = scooter.all()
-// for (let i = 0; i < pokearray; i++) {
-//   if (pokearray[i].name === ("prinplup")){
-//
-//   }
-//
-// console.log(pr);
-// }
-
-
-
+    let evolveButton2 = document.querySelector('.evo2')
     let evolveButton = document.querySelector('.evo')
     let evoImage = document.querySelector('#evoImage')
     let evoImage2 = document.querySelector('#evoImage2')
@@ -165,7 +158,6 @@ function emp() {
     let prinplupStats = document.querySelector('.info2')
     let empoleonStats = document.querySelector('.info3')
 
-//VARIABLES//
 
     evolveButton.addEventListener("click", (event) => {
 
@@ -187,6 +179,7 @@ tunes.pause();
 prinplupStats.classList.add("fadeIn");
 piplupStats.classList.add("fadeOut");
 evolveButton.style.zIndex = "-1";
+evolveButton2.style.zIndex = "1";
 
 
 }
@@ -197,7 +190,7 @@ evolveButton.style.zIndex = "-1";
 
 
 
-    let evolveButton2 = document.querySelector('.evo2')
+
     evolveButton2.addEventListener("click", (event) => {
 
       tunes.play();
@@ -207,7 +200,7 @@ evolveButton.style.zIndex = "-1";
 
 
 
-setTimeout(changeToEmpoleon, 7130); //stackoverflow showed me how to delay a function
+setTimeout(changeToEmpoleon, 7130);
       function changeToEmpoleon () {
 
 prinBackground.style["background-image"] = 'url(https://pokewalls.files.wordpress.com/2012/12/395empoleon1920x1200.jpg)';
@@ -216,8 +209,6 @@ tunes.pause();
 
 empoleonStats.classList.add("fadeIn");
 prinplupStats.classList.add("fadeOut");
-// evolveButton.classList.add("evo2");
-// evolveButton.classList.remove("evo");
 
 
 }

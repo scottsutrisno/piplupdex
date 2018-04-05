@@ -331,6 +331,7 @@ button {
   border-radius: 50px;
   animation-duration: 1s;
   position: relative;
+  z-index: -1;
 
 }
 

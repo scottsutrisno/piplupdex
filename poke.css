@@ -98,7 +98,7 @@ main {
   height: 550px;
   background-image: url(http://getwallpapers.com/wallpaper/full/7/8/2/1099174-free-download-piplup-wallpaper-1920x1080-photo.jpg);
 }
-
+/*
 .container2 {
   background-size: 1100px 600px;
   width: 100%;
@@ -111,7 +111,7 @@ main {
   width: 100%;
   height: 550px;
   background-image: url(https://pokewalls.files.wordpress.com/2012/12/395empoleon1920x1200.jpg);
-}
+} */
 
 .bgi img {
   height: 150px;
@@ -119,10 +119,10 @@ main {
 }
 
 .box {
-  width: 410px;
-  height: 100px;
-  margin-left: 71px;
-  bottom: 205px;
+  width: 415px;
+  height: 90px;
+  margin-left: 75px;
+  bottom: 470px;
   position: relative;
 }
 
@@ -132,14 +132,36 @@ main {
   margin: 200px 0px 10px 125px;
 }
 
+.background {
+  background-image: url(https://img00.deviantart.net/2e66/i/2013/357/f/b/water_background_by_archiexaffier-d6z5otz.png);
+  width: 395px;
+  height: 370px;
+  margin-left: 75px;
+  margin-bottom:7px;
+  position: relative;
+  border:double black 10px;
+
+}
+
+
 #bgi2 img {
   width: 230px;
   height: 180px;
-  bottom: 235px;
-  left: 155px;
+  bottom: 225px;
+  left: 165px;
   position: relative;
   z-index: 1;
   opacity: 0 ;
+}
+
+#bgi3 img {
+  width: 220px;
+  height: 260px;
+  bottom: 480px;
+  left: 175px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
 }
 
 .bg1 {
@@ -151,7 +173,7 @@ main {
 
 #desc {
   position: relative;
-  bottom: 297px;
+  bottom: 555px;
   left: 100px;
   color: black;
   font-size: 17px;
@@ -162,13 +184,6 @@ main {
   padding: 40px 20px 0px 200px;
 }
 
-.background {
-  background-image: url(https://img00.deviantart.net/2e66/i/2013/357/f/b/water_background_by_archiexaffier-d6z5otz.png);
-  width: 400px;
-  height: 400px;
-  margin-left: 75px;
-}
-
 
 .info {
   width: 400px;
@@ -176,7 +191,9 @@ main {
   float: right;
   font-size: 24px;
   font-family: PokeFont;
-  opacity: 0.75;
+  opacity: 1;
+  position: absolute;
+  margin-left: 1022px;
 }
 
 .info h1 {
@@ -186,20 +203,96 @@ main {
 .info h2 {
   font-size: 20px;
   border-bottom: 15px solid rgb(18, 244, 6);
-  width: 210px;
+  width: 160px;
 }
 
 .info h3 {
   font-size: 20px;
   border-bottom: 15px solid rgb(255, 0, 0);
-  width: 180px;
+  width: 130px;
 }
 
 .info h4 {
   font-size: 20px;
   border-bottom: 15px solid rgb(250, 255, 0);
-  width: 210px;
+  width: 160px;
 }
+
+
+
+
+
+
+.info2 {
+  width: 400px;
+  height: 530px;
+  float: right;
+  font-size: 24px;
+  font-family: PokeFont;
+  opacity: 0;
+  z-index: 0;
+  position:relative;
+  margin-left: 300px;
+}
+
+.info2 h1 {
+  font-size: 26px;
+}
+
+.info2 h2 {
+  font-size: 20px;
+  border-bottom: 15px solid rgb(18, 244, 6);
+  width: 200px;
+}
+
+.info2 h3 {
+  font-size: 20px;
+  border-bottom: 15px solid rgb(255, 0, 0);
+  width: 220px;
+}
+
+.info2 h4 {
+  font-size: 20px;
+  border-bottom: 15px solid rgb(250, 255, 0);
+  width: 240px;
+}
+
+
+.info3 {
+  width: 400px;
+  height: 530px;
+  float: right;
+  font-size: 24px;
+  font-family: PokeFont;
+  opacity: 0;
+  position: absolute;
+  margin-left: 1022px;
+
+}
+
+.info3 h1 {
+  font-size: 26px;
+}
+
+.info3 h2 {
+  font-size: 20px;
+  border-bottom: 15px solid rgb(18, 244, 6);
+  width: 280px;
+}
+
+.info3 h3 {
+  font-size: 20px;
+  border-bottom: 15px solid rgb(255, 0, 0);
+  width: 300px;
+}
+
+.info3 h4 {
+  font-size: 20px;
+  border-bottom: 15px solid rgb(250, 255, 0);
+  width: 320px;
+}
+
+
 
 button {
   font-family: PokeFont;
@@ -216,17 +309,73 @@ button {
 }
 
 
-#evo {
+.evo {
   float: right;
-  margin: 255px 470px 0px 0px;
+  margin: 255px 0px 0px 490px;
   height: 60px;
   border-radius: 50px;
   animation-duration: 1s;
+  position: absolute;
 }
 
-#evo:hover {
+.evo:hover {
   animation-name: bounce;
 }
+
+
+
+.evo2 {
+  float: right;
+  margin: 255px 175px 0px 0px;
+  height: 60px;
+  border-radius: 50px;
+  animation-duration: 1s;
+  position: relative;
+
+}
+
+.evo2:hover {
+  animation-name: bounce;
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.fadeIn {
+animation-name: fadeIn;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+.fadeOut {
+animation-name: fadeOut;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+
+
+
 
 @keyframes bounce {
 	20% {

@@ -185,26 +185,21 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
       myMsg.innerHTML = myInput.value + " is evolving!"
 
 
+      setTimeout(changeToPrinplup, 7130); //stackoverflow showed me how to delay a function
 
-
-setTimeout(changeToPrinplup, 7130); //stackoverflow showed me how to delay a function
       function changeToPrinplup () {
+            prinBackground.style["background-image"] = 'url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg)';
+            myMsg.innerHTML = myInput.value + " evolved" + "<br><br> into Prinplup!";
+            tunes.pause();
 
-prinBackground.style["background-image"] = 'url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg)';
-myMsg.innerHTML = myInput.value + " evolved" + "<br><br> into Prinplup!";
-tunes.pause();
+            prinplupStats.classList.add("fadeIn");
+            piplupStats.classList.add("fadeOut");
+            evolveButton.style.zIndex = "-1";
+            evolveButton2.style.zIndex = "1";
+            buttonDesc.innerHTML = "LVL 32!"
+            evoImage2.classList.remove("nFadeOut");
 
-prinplupStats.classList.add("fadeIn");
-piplupStats.classList.add("fadeOut");
-evolveButton.style.zIndex = "-1";
-evolveButton2.style.zIndex = "1";
-buttonDesc.innerHTML = "LVL 32!"
-evoImage2.classList.remove("nFadeOut");
-
-}
-
-
-
+      }
     })
 
 

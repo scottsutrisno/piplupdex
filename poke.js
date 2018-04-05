@@ -211,22 +211,31 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
       tunes.play();
       evoImage2.classList.add("evolve2");
       evoImage3.classList.add("evolve");
-      myMsg.innerHTML = "Prinplup" + " is evolving!"
 
+      if (myInput.value == "Piplup") {
+        myMsg.innerHTML = "Prinplup" + " is evolving!"
+      } else {
+      myMsg.innerHTML = myInput.value + " is evolving!"
+    }
 
 
 setTimeout(changeToEmpoleon, 7130);
       function changeToEmpoleon () {
 
 prinBackground.style["background-image"] = 'url(https://pokewalls.files.wordpress.com/2012/12/395empoleon1920x1200.jpg)';
-myMsg.innerHTML = "Prinplup evolved" + "<br><br> into Empoleon!";
-tunes.pause();
 
+tunes.pause();
 empoleonStats.classList.add("fadeIn");
 prinplupStats.classList.add("fadeOut");
 evolveButton2.style.zIndex = "-1";
 buttonDesc.innerHTML = ""
 evoImage2.classList.remove("nFadeOut");
+
+if (myInput.value == "Piplup") {
+  myMsg.innerHTML = "Prinplup evolved" + "<br><br> into Empoleon!";
+} else {
+myMsg.innerHTML = myInput.value + " evolved" +"<br><br> into Empoleon!";
+}
 
 
 }

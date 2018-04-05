@@ -26,15 +26,18 @@ nav li {
 
 #logo {
   float: right;
-  margin-right: 450px;
+  margin-right: 485px;
   margin-top: 5px;
 }
 
 #logo img {
   height:140px;
-  opacity:1;
+  opacity:0;
 }
 
+#sprite {
+  padding-top: 15px;
+}
 
 
 #nv1 {

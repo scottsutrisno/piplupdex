@@ -1,3 +1,4 @@
+
 class Pokemon{
     constructor(name,hp,attack,defense,abilities=[]){
         this.hp = hp
@@ -16,6 +17,7 @@ class Scott{
     }
     all(){
         return this.pokemon
+
     }
     add(poke){
         this.pokemon.push(poke)
@@ -29,6 +31,8 @@ let hp = document.getElementById("piplup-hp")
 let attack = document.getElementById("piplup-attack")
 let defense = document.getElementById("piplup-defense")
 
+
+// PIPLUP //
 
 
 
@@ -47,7 +51,7 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
         piplup.addAbility(item.ability.name)
         abilities.innerHTML += item.ability.name + "<br>"
     })
-    scooter.add( piplup)
+    scooter.add(piplup)
     hp.innerHTML = piplup.hp
     attack.innerHTML = piplup.attack
     defense.innerHTML = piplup.defense
@@ -57,8 +61,11 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
   })
 
 
-//PIPLUP
 
+
+
+
+// PRINPLUP //
 
 
   axios.get("https://pokeapi.co/api/v2/pokemon/394/")
@@ -88,7 +95,10 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 
 
 
-//PRINPLUP
+
+// EMPOLEON //
+
+
 
   axios.get("https://pokeapi.co/api/v2/pokemon/395/")
   .then((response) => {
@@ -117,7 +127,9 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 
 
 
-//nickname button!//
+
+
+// NICKNAME //
 
 
     let myBtn = document.querySelector("#btn");
@@ -127,20 +139,27 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     myBtn.addEventListener("click", myFunction);
     function myFunction() {
       myMsg.innerHTML = "WHATS going on guys, <br><br> its ya boi " + myInput.value
-      // "What? " + myInput.value + "<br><br> is Evolving!";
-
 
     }
 
 
+
+
     // EVOLVE BUTTON //
 
-    let evolveButton = document.querySelector('#evo')
+
+    let evolveButton2 = document.querySelector('.evo2')
+    let evolveButton = document.querySelector('.evo')
     let evoImage = document.querySelector('#evoImage')
     let evoImage2 = document.querySelector('#evoImage2')
-    let power = document.querySelector('.info')
+    let evoImage3 = document.querySelector('#evoImage3')
     let prinBackground = document.querySelector('.container')
-    let tunes = document.getElementById("myAudio");
+    let tunes = document.querySelector('#myAudio');
+    let piplupStats = document.querySelector('.info')
+    let prinplupStats = document.querySelector('.info2')
+    let empoleonStats = document.querySelector('.info3')
+
+
     evolveButton.addEventListener("click", (event) => {
 
       tunes.play();
@@ -149,20 +168,50 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
       myMsg.innerHTML = myInput.value + " is evolving!"
 
 
+
+
 setTimeout(changeToPrinplup, 7130); //stackoverflow showed me how to delay a function
       function changeToPrinplup () {
 
 prinBackground.style["background-image"] = 'url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg)';
 myMsg.innerHTML = myInput.value + " evolved" + "<br><br> into Prinplup!";
-evolveButton.innerHTML = "Level 32";
 tunes.pause();
-hp.id = "prinplup-hp";
-attack.id = "prinplup-attack";
-defense.id = "prinplup-defense";
-//Changes ID to prinplup but the value on the page stays the same
+
+prinplupStats.classList.add("fadeIn");
+piplupStats.classList.add("fadeOut");
+evolveButton.style.zIndex = "-1";
+evolveButton2.style.zIndex = "1";
 
 
 }
 
 
     })
+
+
+
+
+
+    evolveButton2.addEventListener("click", (event) => {
+
+      tunes.play();
+      evoImage.classList.add("evolve2");
+      evoImage3.classList.add("evolve");
+      myMsg.innerHTML = "Prinplup" + " is evolving!"
+
+
+
+setTimeout(changeToEmpoleon, 7130);
+      function changeToEmpoleon () {
+
+prinBackground.style["background-image"] = 'url(https://pokewalls.files.wordpress.com/2012/12/395empoleon1920x1200.jpg)';
+myMsg.innerHTML = "Prinplup evolved" + "<br><br> into Empoleon!";
+tunes.pause();
+
+empoleonStats.classList.add("fadeIn");
+prinplupStats.classList.add("fadeOut");
+
+
+}
+
+  })

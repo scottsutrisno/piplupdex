@@ -150,11 +150,12 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 
     let evolveButton2 = document.querySelector('.evo2')
     let evolveButton = document.querySelector('.evo')
+    let buttonDesc = document.querySelector('.level')
     let evoImage = document.querySelector('#evoImage')
     let evoImage2 = document.querySelector('#evoImage2')
     let evoImage3 = document.querySelector('#evoImage3')
     let prinBackground = document.querySelector('.container')
-    let tunes = document.querySelector('#myAudio');
+    let tunes = document.querySelector('#myAudio')
     let piplupStats = document.querySelector('.info')
     let prinplupStats = document.querySelector('.info2')
     let empoleonStats = document.querySelector('.info3')
@@ -181,7 +182,7 @@ prinplupStats.classList.add("fadeIn");
 piplupStats.classList.add("fadeOut");
 evolveButton.style.zIndex = "-1";
 evolveButton2.style.zIndex = "1";
-
+buttonDesc.innerHTML = "LVL 32!"
 
 }
 
@@ -189,7 +190,7 @@ evolveButton2.style.zIndex = "1";
     })
 
 
-
+// EVOLVE BUTTON 2 //
 
 
     evolveButton2.addEventListener("click", (event) => {

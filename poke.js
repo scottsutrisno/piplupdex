@@ -1,13 +1,15 @@
 
 class Pokemon{
-    constructor(name,hp,attack,defense,abilities=[]){
+    constructor(name,hp,attack,defense){
         this.hp = hp
         this.attack = attack
         this.defense = defense
-        this.abilities = abilities
+        this.abilities = []
         this.name = name
+
     }
-    addAbility(ability){
+    ability(ability){
+
         this.abilities.push(ability)
     }
 }
@@ -19,17 +21,21 @@ class Scott{
         return this.pokemon
 
     }
-    add(poke){
-        this.pokemon.push(poke)
+    add(addToArray){
+        this.pokemon.push(addToArray)
     }
+    //
+    // get(name) {
+    //   for(let i = 0; i < pokemon.length; i++)
+    //   if(name == pokemon[i].name){
+    //     return pokemon[i]
+    //   }
+    // }
+
+
+
 }
 let scooter = new Scott()
-
-
-
-let hp = document.getElementById("piplup-hp")
-let attack = document.getElementById("piplup-attack")
-let defense = document.getElementById("piplup-defense")
 
 
 // PIPLUP //
@@ -39,30 +45,40 @@ let defense = document.getElementById("piplup-defense")
 axios.get("https://pokeapi.co/api/v2/pokemon/393/")
 .then((response) => {
     let data = response.data
-    let abilities = document.getElementById("piplup-abilities")
+    let hp = document.querySelector("#piplup-hp")
+    let attack = document.querySelector("#piplup-attack")
+    let defense = document.querySelector("#piplup-defense")
+    let abilities = document.querySelector("#piplup-abilities")
 
     let piplup = new Pokemon(
-        data.name, //WHY?
+        data.name,
         data.stats[5].base_stat,
         data.stats[4].base_stat,
         data.stats[3].base_stat,
     )
-    data.abilities.forEach((item, addAbility) => {
-        piplup.addAbility(item.ability.name)
+
+
+
+    data.abilities.forEach((item, ability) => {
+        piplup.ability(item.ability.name)
         abilities.innerHTML += item.ability.name + "<br>"
+
+
+
+
+
+
+
+
+
+
     })
     scooter.add(piplup)
     hp.innerHTML = piplup.hp
     attack.innerHTML = piplup.attack
     defense.innerHTML = piplup.defense
 
-}).catch((error) => {
-    console.log(error)
-  })
-
-
-
-
+})
 
 
 // PRINPLUP //
@@ -71,59 +87,52 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
   axios.get("https://pokeapi.co/api/v2/pokemon/394/")
 .then((response) => {
     let data = response.data
-    let hp = document.getElementById("prinplup-hp")
-    let attack = document.getElementById("prinplup-attack")
-    let defense = document.getElementById("prinplup-defense")
-    let abilities = document.getElementById("prinplup-abilities")
+    let hp = document.querySelector("#prinplup-hp")
+    let attack = document.querySelector("#prinplup-attack")
+    let defense = document.querySelector("#prinplup-defense")
+    let abilities = document.querySelector("#prinplup-abilities")
     let prinplup = new Pokemon(
         data.name,
         data.stats[5].base_stat,
         data.stats[4].base_stat,
         data.stats[3].base_stat,
     )
-    data.abilities.forEach((item, addAbility) => {
-        prinplup.addAbility(item.ability.name)
+    data.abilities.forEach((item, ability) => {
+        prinplup.ability(item.ability.name)
         abilities.innerHTML += item.ability.name +"<br>"
     })
     scooter.add(prinplup)
     hp.innerHTML = prinplup.hp
     attack.innerHTML = prinplup.attack
     defense.innerHTML = prinplup.defense
-}).catch((error) => {
-    console.log(error)
-  })
-
-
+})
 
 
 // EMPOLEON //
 
 
-
   axios.get("https://pokeapi.co/api/v2/pokemon/395/")
   .then((response) => {
       let data = response.data
-      let hp = document.getElementById("empoleon-hp")
-      let attack = document.getElementById("empoleon-attack")
-      let defense = document.getElementById("empoleon-defense")
-      let abilities = document.getElementById("empoleon-abilities")
+      let hp = document.querySelector("#empoleon-hp")
+      let attack = document.querySelector("#empoleon-attack")
+      let defense = document.querySelector("#empoleon-defense")
+      let abilities = document.querySelector("#empoleon-abilities")
       let empoleon = new Pokemon(
           data.name,
           data.stats[5].base_stat,
           data.stats[4].base_stat,
           data.stats[3].base_stat,
       )
-      data.abilities.forEach((item, addAbility) => {
-          empoleon.addAbility(item.ability.name)
+      data.abilities.forEach((item, ability) => {
+          empoleon.ability(item.ability.name)
           abilities.innerHTML += item.ability.name +"<br>"
       })
       scooter.add(empoleon)
       hp.innerHTML = empoleon.hp
       attack.innerHTML = empoleon.attack
       defense.innerHTML = empoleon.defense
-  }).catch((error) => {
-      console.log(error)
-    })
+  })
 
 
 
@@ -141,6 +150,12 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
       myMsg.innerHTML = "WHATS going on guys, <br><br> its ya boi " + myInput.value
 
     }
+
+
+
+
+
+
 
 
 
@@ -164,8 +179,9 @@ axios.get("https://pokeapi.co/api/v2/pokemon/393/")
     evolveButton.addEventListener("click", (event) => {
 
       tunes.play();
-      evoImage.classList.add("evolve");
-      evoImage2.classList.add("evolve2");
+
+      evoImage.classList.add("evolve2");
+      evoImage2.classList.add("evolve");
       myMsg.innerHTML = myInput.value + " is evolving!"
 
 
@@ -183,8 +199,10 @@ piplupStats.classList.add("fadeOut");
 evolveButton.style.zIndex = "-1";
 evolveButton2.style.zIndex = "1";
 buttonDesc.innerHTML = "LVL 32!"
+evoImage2.classList.remove("nFadeOut");
 
 }
+
 
 
     })
@@ -196,7 +214,7 @@ buttonDesc.innerHTML = "LVL 32!"
     evolveButton2.addEventListener("click", (event) => {
       tunes.currentTime = 0;
       tunes.play();
-      evoImage.classList.add("evolve2");
+      evoImage2.classList.add("evolve2");
       evoImage3.classList.add("evolve");
       myMsg.innerHTML = "Prinplup" + " is evolving!"
 
@@ -213,8 +231,80 @@ empoleonStats.classList.add("fadeIn");
 prinplupStats.classList.add("fadeOut");
 evolveButton2.style.zIndex = "-1";
 buttonDesc.innerHTML = ""
+evoImage2.classList.remove("nFadeOut");
 
 
 }
 
   })
+
+
+
+
+
+
+  let piplupButton = document.querySelector('#nv3');
+
+
+
+  piplupButton.addEventListener("click", (event) => {
+
+evolveButton2.style.zIndex = "-1";
+evolveButton.style.zIndex = "1";
+evoImage.style.opacity = "1";
+evoImage2.style.opacity = "0";
+evoImage3.style.opacity = "0";
+buttonDesc.innerHTML = "LVL 16!"
+prinBackground.style["background-image"] = 'url(http://getwallpapers.com/wallpaper/full/7/8/2/1099174-free-download-piplup-wallpaper-1920x1080-photo.jpg)';
+piplupStats.style.opacity = "1";
+prinplupStats.style.opacity = "0";
+empoleonStats.style.opacity = "0";
+
+
+  })
+
+
+
+
+
+    let prinplupButton = document.querySelector('#nv2');
+
+
+
+    prinplupButton.addEventListener("click", (event) => {
+
+  evolveButton2.style.zIndex = "1";
+  evolveButton.style.zIndex = "-1";
+  evoImage.style.opacity = "0";
+  evoImage2.style.opacity = "1";
+  evoImage3.style.opacity = "0";
+  buttonDesc.innerHTML = "LVL 32!"
+  prinBackground.style["background-image"] = 'url(https://i.pinimg.com/originals/cb/b4/75/cbb4756453473e5e6713f000e3f3a48f.jpg)';
+  piplupStats.style.opacity = "0";
+  prinplupStats.style.opacity = "1";
+  empoleonStats.style.opacity = "0";
+
+
+    })
+
+
+
+
+      let empoleonButton = document.querySelector('#nv1');
+
+
+
+      empoleonButton.addEventListener("click", (event) => {
+
+    evolveButton2.style.zIndex = "-1";
+    evolveButton.style.zIndex = "-1";
+    evoImage.style.opacity = "0";
+    evoImage2.style.opacity = "0";
+    evoImage3.style.opacity = "1";
+    buttonDesc.innerHTML = ""
+    prinBackground.style["background-image"] = 'url(https://pokewalls.files.wordpress.com/2012/12/395empoleon1920x1200.jpg)';
+    piplupStats.style.opacity = "0";
+    prinplupStats.style.opacity = "0";
+    empoleonStats.style.opacity = "1";
+
+      })

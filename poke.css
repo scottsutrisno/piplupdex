@@ -7,8 +7,8 @@
 nav {
   width: 100%;
   overflow: hidden;
-  background-color: rgb(254, 70, 70);
-  background-image: url(https://www.walldevil.com/wallpapers/a74/red-wallpaper-pokeball-pokemon-images.jpg);
+  background-color: #F2C840;
+  /* background-image: url(https://www.walldevil.com/wallpapers/a74/red-wallpaper-pokeball-pokemon-images.jpg); */
   height: 123px;
 
 }
@@ -24,16 +24,26 @@ nav li {
   color:white;
 }
 
+#logo {
+  float: right;
+  margin-right: 600px
+}
+
+
 #nv1 {
-  margin: 3px 40px 5px 0px;
-  padding: 80px 15px 20px 15px;
+  margin: 10px 40px 5px 0px;
+  padding: 0px 15px 0px 15px;
   width: 120px;
   display: block;
   text-decoration: none;
   text-align: center;
   font-family: PokeFont;
   font-size: 12px;
-  color: white;
+  color: black;
+}
+
+#nv1 img {
+  width: 70px;
 }
 
 #nv1:hover {
@@ -42,15 +52,21 @@ nav li {
 }
 
 #nv2 {
-  margin: 3px 40px 5px 0px;
-  padding: 80px 15px 20px 15px;
+  margin: 0px 40px 0px 0px;
+  padding: 0px 15px 0px 15px;
   width: 120px;
   display: block;
   text-decoration: none;
   text-align: center;
   font-family: PokeFont;
   font-size: 12px;
-  color: white;
+  color: black;
+
+}
+
+#nv2 img {
+  width: 120px;
+  height: 97px;
 }
 
 #nv2:hover {
@@ -60,14 +76,20 @@ nav li {
 
 #nv3 {
   margin: 3px 40px 5px 0px;
-  padding: 80px 15px 20px 15px;
+  padding: 0px 15px 0px 15px;
   width: 120px;
   display: block;
   text-decoration: none;
   text-align: center;
   font-family: PokeFont;
   font-size: 12px;
-  color: white;
+  color: black;
+
+}
+
+#nv3 img {
+  width: 120px;
+    height: 95px;
 }
 
 #nv3:hover {
@@ -78,10 +100,11 @@ nav li {
 
 main {
   width: 100%;
-  height: 1000px;
-  /* background-color: rgb(254, 70, 70); */
-  background-image: url(https://www.walldevil.com/wallpapers/a74/red-wallpaper-pokeball-pokemon-images.jpg);
+  height: 740px;
+  background-color: #F2C840;
+  /* background-image: url(https://www.walldevil.com/wallpapers/a74/red-wallpaper-pokeball-pokemon-images.jpg); */
   /* background-size: 1590px 1080px; */
+  overflow: hidden;
 }
 
 .bg1 {
@@ -119,12 +142,6 @@ main {
   position: relative;
 }
 
-.bgi img {
-  width: 150px;
-  height: 140px;
-  margin: 200px 0px 10px 125px;
-}
-
 .background {
   background-image: url(https://img00.deviantart.net/2e66/i/2013/357/f/b/water_background_by_archiexaffier-d6z5otz.png);
   width: 395px;
@@ -136,12 +153,22 @@ main {
 
 }
 
+#bgi img {
+  width: 140px;
+  height: 110px;
+  top: 220px;
+  left: 130px;
+  position: relative;
+  z-index: 1;
+  opacity: 1 ;
+}
+
 
 #bgi2 img {
   width: 230px;
   height: 180px;
   bottom: 225px;
-  left: 165px;
+  left: 160px;
   position: relative;
   z-index: 1;
   opacity: 0 ;
@@ -151,9 +178,9 @@ main {
   width: 220px;
   height: 260px;
   bottom: 480px;
-  left: 175px;
+  left: 170px;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   opacity: 0;
 }
 
@@ -625,3 +652,46 @@ animation-fill-mode: forwards;
   animation-duration: 7s;
   animation-fill-mode: forwards;
 }
+
+
+
+
+@keyframes navFadeout {
+
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+
+
+  .nFadeOut {
+    animation-name: navFadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+
+
+
+  @keyframes navFadeIn {
+
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+
+
+
+    .nFadeIn{
+      animation-name: navFadeIn;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }

@@ -26,14 +26,14 @@ nav li {
 
 #nv1 {
   margin: 3px 40px 5px 0px;
-  padding: 20px 15px 20px 15px;
+  padding: 80px 15px 20px 15px;
   width: 120px;
   display: block;
   text-decoration: none;
   text-align: center;
   font-family: PokeFont;
   font-size: 12px;
-  color: black;
+  color: white;
 }
 
 #nv1:hover {
@@ -43,14 +43,14 @@ nav li {
 
 #nv2 {
   margin: 3px 40px 5px 0px;
-  padding: 20px 15px 20px 15px;
+  padding: 80px 15px 20px 15px;
   width: 120px;
   display: block;
   text-decoration: none;
   text-align: center;
   font-family: PokeFont;
   font-size: 12px;
-  color: black;
+  color: white;
 }
 
 #nv2:hover {
@@ -60,14 +60,14 @@ nav li {
 
 #nv3 {
   margin: 3px 40px 5px 0px;
-  padding: 20px 15px 20px 15px;
+  padding: 80px 15px 20px 15px;
   width: 120px;
   display: block;
   text-decoration: none;
   text-align: center;
   font-family: PokeFont;
   font-size: 12px;
-  color: black;
+  color: white;
 }
 
 #nv3:hover {

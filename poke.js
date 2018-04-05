@@ -308,3 +308,21 @@ empoleonStats.style.opacity = "0";
     empoleonStats.style.opacity = "1";
 
       })
+
+
+
+      let sprite = document.querySelector('#sprite')
+      let trainerCard = document.querySelector('#logo');
+      sprite.addEventListener("click", (event) => {
+
+      trainerCard.style.opacity = "1";
+
+
+
+        })
+
+        trainerCard.addEventListener("click", (event) => {
+
+        trainerCard.style.opacity = "0";
+
+      })

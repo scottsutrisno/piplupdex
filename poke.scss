@@ -1,31 +1,37 @@
-@font-face {
+ @font-face {
   font-family: PokeFont;
-  src: url(PokeFont.ttf); }
+  src: url(PokeFont.ttf);
+}
 /*----- NAV BAR -----*/
 nav {
   width: 100%;
   overflow: hidden;
   background-color: #F2C840;
-  height: 150px; }
+  height: 150px;
+}
 
 nav ul {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 nav li {
   float: right;
-  color: white; }
+  color: white;
+}
 
 #logo {
   float: right;
   margin-right: 485px;
   margin-top: 5px;
   height: 140px;
-  opacity: 0; }
+  opacity: 0;
+}
 
 #sprite {
-  padding-top: 15px; }
+  padding-top: 15px;
+}
 
 #nv1 {
   margin: 30px 40px 5px 0px;
@@ -36,14 +42,17 @@ nav li {
   text-align: center;
   font-family: PokeFont;
   font-size: 12px;
-  color: black; }
+  color: black;
+}
 
 #nv1 img {
-  width: 70px; }
+  width: 70px;
+}
 
 #nv1:hover {
   background: #103770;
-  color: white; }
+  color: white;
+}
 
 #nv2 {
   margin: 14px 40px 0px 0px;
@@ -54,15 +63,18 @@ nav li {
   text-align: center;
   font-family: PokeFont;
   font-size: 12px;
-  color: black; }
+  color: black;
+}
 
 #nv2 img {
   width: 120px;
-  height: 104px; }
+  height: 104px;
+}
 
 #nv2:hover {
   background: #205990;
-  color: white; }
+  color: white;
+}
 
 #nv3 {
   margin: 23px 40px 5px 0px;
@@ -73,52 +85,60 @@ nav li {
   text-align: center;
   font-family: PokeFont;
   font-size: 12px;
-  color: black; }
+  color: black;
+}
 
 #nv3 img {
   width: 120px;
-  height: 95px; }
+  height: 95px;
+}
 
 #nv3:hover {
   background: #96D1EF;
-  color: white; }
-
+  color: white;
+}
 /*-----  -----*/
 main {
   width: 100%;
   height: 650px;
   background-color: #F2C840;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .bg1 {
   width: 100%;
   height: 735px;
   background-color: black;
-  padding-top: 150px; }
+  padding-top: 150px;
+}
 
 .bg2 {
   width: 100%;
   height: 735px;
   background-color: black;
-  padding-top: 150px; }
+  padding-top: 150px;
+}
 
 .container {
   background-size: 1100px 600px;
   width: 98.9%;
   height: 585px;
   border: solid black 8px;
-  background-image: url(http://getwallpapers.com/wallpaper/full/7/8/2/1099174-free-download-piplup-wallpaper-1920x1080-photo.jpg); }
+  background-image: url(http://getwallpapers.com/wallpaper/full/7/8/2/1099174-free-download-piplup-wallpaper-1920x1080-photo.jpg);
+}
 
 .bgi img {
   height: 150px;
-  margin: 130px; }
+  margin: 130px;
+}
 
 .box {
   width: 418px;
   height: 90px;
   margin-left: 72px;
   bottom: 450px;
-  position: relative; }
+  position: relative;
+}
 
 .background {
   background-image: url(https://img00.deviantart.net/2e66/i/2013/357/f/b/water_background_by_archiexaffier-d6z5otz.png);
@@ -127,7 +147,8 @@ main {
   margin-left: 75px;
   margin-bottom: 7px;
   position: relative;
-  border: solid black 6px; }
+  border: solid black 6px;
+}
 
 #bgi img {
   width: 140px;
@@ -136,7 +157,8 @@ main {
   left: 130px;
   position: relative;
   z-index: 1;
-  opacity: 1; }
+  opacity: 1;
+}
 
 #bgi2 img {
   width: 230px;
@@ -145,7 +167,8 @@ main {
   left: 160px;
   position: relative;
   z-index: 1;
-  opacity: 0; }
+  opacity: 0;
+}
 
 #bgi3 img {
   width: 220px;
@@ -154,13 +177,15 @@ main {
   left: 170px;
   position: relative;
   z-index: 1;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .bg1 {
   width: 100%;
   height: 735px;
   background-color: black;
-  padding-top: 150px; }
+  padding-top: 150px;
+}
 
 #desc {
   position: relative;
@@ -168,10 +193,12 @@ main {
   left: 100px;
   color: black;
   font-size: 17px;
-  font-family: PokeFont; }
+  font-family: PokeFont;
+}
 
 #nickname {
-  padding: 40px 0px 0px 150px; }
+  padding: 40px 0px 0px 150px;
+}
 
 .info {
   width: 400px;
@@ -181,28 +208,33 @@ main {
   font-family: PokeFont;
   opacity: 1;
   position: absolute;
-  margin-left: 1022px; }
+  margin-left: 1022px;
+}
 
 .info h1 {
-  font-size: 26px; }
+  font-size: 26px;
+}
 
 .info h2 {
   font-size: 20px;
-  border-bottom: 15px solid #12f406;
+  border-bottom: 15px solid rgb(18, 244, 6);
   width: 160px;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+}
 
 .info h3 {
   font-size: 20px;
-  border-bottom: 15px solid red;
+  border-bottom: 15px solid rgb(255, 0, 0);
   width: 130px;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+}
 
 .info h4 {
   font-size: 20px;
-  border-bottom: 15px solid #faff00;
+  border-bottom: 15px solid rgb(250, 255, 0);
   width: 160px;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+}
 
 .info2 {
   width: 400px;
@@ -212,28 +244,33 @@ main {
   font-family: PokeFont;
   opacity: 0;
   position: absolute;
-  margin-left: 1022px; }
+  margin-left: 1022px;
+}
 
 .info2 h1 {
-  font-size: 26px; }
+  font-size: 26px;
+}
 
 .info2 h2 {
   font-size: 20px;
-  border-bottom: 15px solid #12f406;
+  border-bottom: 15px solid rgb(18, 244, 6);
   width: 200px;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+}
 
 .info2 h3 {
   font-size: 20px;
-  border-bottom: 15px solid red;
+  border-bottom: 15px solid rgb(255, 0, 0);
   width: 220px;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+}
 
 .info2 h4 {
   font-size: 20px;
-  border-bottom: 15px solid #faff00;
+  border-bottom: 15px solid rgb(250, 255, 0);
   width: 240px;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+}
 
 .info3 {
   width: 400px;
@@ -243,39 +280,46 @@ main {
   font-family: PokeFont;
   opacity: 0;
   position: absolute;
-  margin-left: 1022px; }
+  margin-left: 1022px;
+}
 
 .info3 h1 {
-  font-size: 26px; }
+  font-size: 26px;
+}
 
 .info3 h2 {
   font-size: 20px;
-  border-bottom: 15px solid #12f406;
+  border-bottom: 15px solid rgb(18, 244, 6);
   width: 280px;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+}
 
 .info3 h3 {
   font-size: 20px;
-  border-bottom: 15px solid red;
+  border-bottom: 15px solid rgb(255, 0, 0);
   width: 300px;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+}
 
 .info3 h4 {
   font-size: 20px;
-  border-bottom: 15px solid #faff00;
+  border-bottom: 15px solid rgb(250, 255, 0);
   width: 320px;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+}
 
 button {
   font-family: PokeFont;
   font-size: 8px;
-  padding: 5px 10px 4px 4px; }
+  padding: 5px 10px 4px 4px;
+}
 
 #username {
   color: black;
   font-family: Pokefont;
   font-size: 8px;
-  height: 14px; }
+  height: 14px;
+}
 
 .evo {
   float: right;
@@ -283,10 +327,12 @@ button {
   height: 60px;
   border-radius: 50px;
   animation-duration: 1s;
-  position: absolute; }
+  position: absolute;
+}
 
 .evo:hover {
-  animation-name: bounce; }
+  animation-name: bounce;
+}
 
 .evo2 {
   float: right;
@@ -295,10 +341,12 @@ button {
   border-radius: 50px;
   animation-duration: 1s;
   position: relative;
-  z-index: -1; }
+  z-index: -1;
+}
 
 .evo2:hover {
-  animation-name: bounce; }
+  animation-name: bounce;
+}
 
 .level {
   float: right;
@@ -307,193 +355,288 @@ button {
   border-radius: 50px;
   animation-duration: 1s;
   position: absolute;
-  color: white; }
+  color: white;
+}
 
 @keyframes fadeIn {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
+
 .fadeIn {
   animation-name: fadeIn;
   animation-duration: 2s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+}
 
 @keyframes fadeOut {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
+
 .fadeOut {
   animation-name: fadeOut;
   animation-duration: 2s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+}
 
 @keyframes bounce {
   20% {
-    transform: translateY(0px); }
+    transform: translateY(0px)
+  }
   40% {
-    transform: translateY(-15px); }
+    transform: translateY(-15px)
+  }
   60% {
-    transform: translateY(0px); }
+    transform: translateY(0px)
+  }
   80% {
-    transform: translateY(-10px); }
+    transform: translateY(-10px)
+  }
   100% {
-    transform: translateY(0px); } }
+    transform: translateY(0px)
+  }
+}
+
 @keyframes evolution {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
+
   2% {
-    opacity: 0; }
+    opacity: 0;
+  }
   5% {
-    opacity: 0; }
+    opacity: 0;
+  }
   7% {
-    opacity: 0; }
+    opacity: 0;
+  }
   10% {
-    opacity: 0; }
+    opacity: 0;
+  }
   12% {
-    opacity: 0; }
+    opacity: 0;
+  }
   15% {
-    opacity: 0; }
+    opacity: 0;
+  }
   17% {
-    opacity: 0; }
+    opacity: 0;
+  }
   20% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
   22% {
-    opacity: 0; }
+    opacity: 0;
+  }
   25% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
   27% {
-    opacity: 0; }
+    opacity: 0;
+  }
   30% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
   32% {
-    opacity: 0; }
+    opacity: 0;
+  }
   35% {
-    opacity: 0.8; }
+    opacity: 0.8;
+  }
   37% {
-    opacity: 0; }
+    opacity: 0;
+  }
   40% {
-    opacity: 0.9; }
+    opacity: 0.9;
+  }
   42% {
-    opacity: 0; }
+    opacity: 0;
+  }
   45% {
-    opacity: 1; }
+    opacity: 1;
+  }
   47% {
-    opacity: 1; }
+    opacity: 1;
+  }
   50% {
-    opacity: 0; }
+    opacity: 0;
+  }
   52% {
-    opacity: 0.6; }
+    opacity: 0.6;
+  }
   55% {
-    opacity: 0; }
+    opacity: 0;
+  }
   57% {
-    opacity: 0.6; }
+    opacity: 0.6;
+  }
   60% {
-    opacity: 0; }
+    opacity: 0;
+  }
   62% {
-    opacity: 0.6; }
+    opacity: 0.6;
+  }
   65% {
-    opacity: 0; }
+    opacity: 0;
+  }
   67% {
-    opacity: 0.6; }
+    opacity: 0.6;
+  }
   70% {
-    opacity: 0; }
+    opacity: 0;
+  }
   72% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
   75% {
-    opacity: 0; }
+    opacity: 0;
+  }
   77% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
   80% {
-    opacity: 0; }
+    opacity: 0;
+  }
   82% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
   85% {
-    opacity: 0; }
+    opacity: 0;
+  }
   87% {
-    opacity: 0.8; }
+    opacity: 0.8;
+  }
   90% {
-    opacity: 0; }
+    opacity: 0;
+  }
   93% {
-    opacity: 0.9; }
+    opacity: 0.9;
+  }
   95% {
-    opacity: 0; }
+    opacity: 0;
+  }
   97% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
+
 .evolve {
   animation-name: evolution;
   animation-duration: 7s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+}
 
 @keyframes evolution2 {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   5% {
-    opacity: 1; }
+    opacity: 1;
+  }
   10% {
-    opacity: 1; }
+    opacity: 1;
+  }
   15% {
-    opacity: 1; }
+    opacity: 1;
+  }
   20% {
-    opacity: 0; }
+    opacity: 0;
+  }
   25% {
-    opacity: 1; }
+    opacity: 1;
+  }
   30% {
-    opacity: 0; }
+    opacity: 0;
+  }
   35% {
-    opacity: 0.8; }
+    opacity: 0.8;
+  }
   40% {
-    opacity: 0; }
+    opacity: 0;
+  }
   45% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
   50% {
-    opacity: 0; }
+    opacity: 0;
+  }
   55% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
   60% {
-    opacity: 0; }
+    opacity: 0;
+  }
   65% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
   70% {
-    opacity: 0; }
+    opacity: 0;
+  }
   75% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
   80% {
-    opacity: 0; }
+    opacity: 0;
+  }
   85% {
-    opacity: 0.7; }
+    opacity: 0.7;
+  }
   90% {
-    opacity: 0; }
+    opacity: 0;
+  }
   95% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 0.0; } }
+    opacity: 0.0;
+  }
+}
+
 .evolve2 {
   animation-name: evolution2;
   animation-duration: 7s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+}
 
 @keyframes navFadeout {
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
+
 .nFadeOut {
   animation-name: navFadeOut;
   animation-duration: 1s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+}
 
 @keyframes navFadeIn {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
+
 .nFadeIn {
   animation-name: navFadeIn;
   animation-duration: 1s;
-  animation-fill-mode: forwards; }
-
-/*# sourceMappingURL=poke.css.map */
+  animation-fill-mode: forwards;
+}

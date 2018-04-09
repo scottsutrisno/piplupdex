@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="poke.css">
+  <link rel="icon" sizes="16x16" href="pokeball.png">
+</head>
+
+
+<!-- all images, gifs, and backgrounds were taken from google -->
+
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li id="nv1"><img src="http://static.pokemonpets.com/images/monsters-images-800-800/395-Empoleon.png" alt="">EMPOLEON</li>
+
+        <li id="nv2"><img src="https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/prinplup.png" alt="">PRINPLUP</li>
+
+        <li id="nv3"><img src="https://img.pokemondb.net/sprites/x-y/shiny/piplup.png" alt="">PIPLUP</li>
+
+      </ul>
+
+      <img id="logo" src="card.png" alt="">
+      <img id="sprite" src="https://www.spriters-resource.com/resources/sheet_icons/4/3696.png" alt="">
+
+    </nav>
+  </header>
+
+
+
+
+  <main>
+    <section class="container">
+      <div id="information">
+        <div class="info">
+          <h1><u>STATS</u>:</h1>
+          <h2><u>HP</u>:</h2>
+          <div id="piplup-hp"></div>
+          <h3><u>ATTACK</u>:</h3>
+          <div id="piplup-attack"></div>
+          <h4><u>DEFENSE</u>:</h4>
+          <div id="piplup-defense"></div>
+          <h1><u>ABILITIES</u>:</h1>
+          <div id="piplup-abilities"></div>
+        </div>
+
+        <div class="info2">
+          <h1><u>STATS</u>:</h1>
+          <h2><u>HP</u>:</h2>
+          <div id="prinplup-hp"></div>
+          <h3><u>ATTACK</u>:</h3>
+          <div id="prinplup-attack"></div>
+          <h4><u>DEFENSE</u>:</h4>
+          <div id="prinplup-defense"></div>
+          <h1><u>ABILITIES</u>:</h1>
+          <div id="prinplup-abilities"></div>
+        </div>
+
+        <div class="info3">
+          <h1><u>STATS</u>:</h1>
+          <h2><u>HP</u>:</h2>
+          <div id="empoleon-hp"></div>
+          <h3><u>ATTACK</u>:</h3>
+          <div id="empoleon-attack"></div>
+          <h4><u>DEFENSE</u>:</h4>
+          <div id="empoleon-defense"></div>
+          <h1><u>ABILITIES</u>:</h1>
+          <div id="empoleon-abilities"></div>
+        </div>
+      </div>
+
+
+      <input class="evo2" type="image" src="https://orig00.deviantart.net/6df2/f/2015/091/d/1/rare_candy_by_peetzaahhh2010-d8nyvh0.png" />
+      <input class="evo" type="image" src="https://orig00.deviantart.net/6df2/f/2015/091/d/1/rare_candy_by_peetzaahhh2010-d8nyvh0.png" />
+      <div class="level">LVL 16!</div>
+      <audio id="myAudio"><source src="evo.mp3" type="audio/mpeg"></audio>
+      <!-- Looked up syntax online ^^-->
+      <div id="nickname">
+        <input id="username" type="text" value="Piplup">
+        <button id="btn">Nickname!</button>
+      </div>
+
+
+    <div class="background">
+      <div id="bgi"><img id="evoImage" src="https://vignette.wikia.nocookie.net/pokemon/images/9/94/Piplup_XY.gif/revision/latest?cb=20140131083332" alt=""></div>
+    </div>
+
+      <div id="bgi2"><img id="evoImage2" src="https://vignette.wikia.nocookie.net/pokemon/images/2/2c/Prinplup_XY.gif/revision/latest?cb=20141113051639" alt=""></div>
+
+      <div id="bgi3"><img id="evoImage3" src="https://vignette.wikia.nocookie.net/pokemon/images/f/fe/Empoleon_XY.gif/revision/latest?cb=20141113051858" alt=""></div>
+
+      <img class="box" src="http://www.iamdavidlee.com/FirstGame/gamefolder/images/talkBox.png" alt="">
+
+      <p id="desc">WHATS going on guys, <br><br> its ya boi Piplup</p>
+
+
+    </section>
+  </main>
+
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="poke.js"></script>
+</body>
+
+</html>

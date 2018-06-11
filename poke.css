@@ -19,65 +19,24 @@ nav li {
 
 #logo {
   float: right;
-  margin-right: 485px;
   margin-top: 5px;
   height: 140px;
-  opacity: 0; }
+  width: 200px;
+  opacity: 0;
+  margin-left: 700px;
+ }
 
 #sprite {
   padding-top: 15px; }
-
-#nv1 {
-  margin: 30px 40px 5px 0px;
-  padding: 0px 15px 0px 15px;
-  width: 120px;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-family: PokeFont;
-  font-size: 12px;
-  color: black; }
-
-#nv1 img {
-  width: 70px; }
 
 #nv1:hover {
   background: #103770;
   color: white; }
 
-#nv2 {
-  margin: 14px 40px 0px 0px;
-  padding: 0px 15px 0px 15px;
-  width: 120px;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-family: PokeFont;
-  font-size: 12px;
-  color: black; }
-
-#nv2 img {
-  width: 120px;
-  height: 104px; }
-
 #nv2:hover {
   background: #205990;
   color: white; }
 
-#nv3 {
-  margin: 23px 40px 5px 0px;
-  padding: 0px 15px 0px 15px;
-  width: 120px;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  font-family: PokeFont;
-  font-size: 12px;
-  color: black; }
-
-#nv3 img {
-  width: 120px;
-  height: 95px; }
 
 #nv3:hover {
   background: #96D1EF;
@@ -102,6 +61,18 @@ main {
   background-color: black;
   padding-top: 150px; }
 
+
+#evoImage3 {
+margin-top: 10px;
+
+}
+
+#evoImage2 {
+margin-top: 80px;
+
+}
+
+
 .container {
   background-size: 1100px 600px;
   width: 98.9%;
@@ -118,15 +89,16 @@ main {
   height: 90px;
   margin-left: 72px;
   bottom: 450px;
+  z-index: 10;
   position: relative; }
 
 .background {
   background-image: url(https://img00.deviantart.net/2e66/i/2013/357/f/b/water_background_by_archiexaffier-d6z5otz.png);
   width: 395px;
   height: 370px;
-  margin-left: 75px;
-  margin-bottom: 7px;
-  position: relative;
+  top: 250px;
+  left: 168px;
+  position: absolute;
   border: solid black 6px; }
 
 #bgi img {
@@ -163,12 +135,14 @@ main {
   padding-top: 150px; }
 
 #desc {
-  position: relative;
-  bottom: 537px;
-  left: 100px;
+  position: absolute;
+  bottom: 88px;
+  left: 216px;
   color: black;
-  font-size: 17px;
+  font-size: 15px;
+  z-index: 11;
   font-family: PokeFont; }
+
 
 #nickname {
   padding: 40px 0px 0px 150px; }
@@ -177,11 +151,11 @@ main {
   width: 400px;
   height: 530px;
   float: right;
-  font-size: 24px;
+  font-size: 16px;
   font-family: PokeFont;
   opacity: 1;
   position: absolute;
-  margin-left: 1022px; }
+  margin-left: 860px; }
 
 .info h1 {
   font-size: 26px; }
@@ -208,11 +182,11 @@ main {
   width: 400px;
   height: 530px;
   float: right;
-  font-size: 24px;
+  font-size: 16px;
   font-family: PokeFont;
   opacity: 0;
   position: absolute;
-  margin-left: 1022px; }
+  margin-left: 860px; }
 
 .info2 h1 {
   font-size: 26px; }
@@ -239,11 +213,11 @@ main {
   width: 400px;
   height: 530px;
   float: right;
-  font-size: 24px;
+  font-size: 16px;
   font-family: PokeFont;
   opacity: 0;
   position: absolute;
-  margin-left: 1022px; }
+  margin-left: 860px; }
 
 .info3 h1 {
   font-size: 26px; }
@@ -277,6 +251,7 @@ button {
   font-size: 8px;
   height: 14px; }
 
+
 .evo {
   float: right;
   margin: 255px 0px 0px 490px;
@@ -290,7 +265,7 @@ button {
 
 .evo2 {
   float: right;
-  margin: 255px 858px 0px 0px;
+  margin: 255px 714px 0px 0px;
   height: 60px;
   border-radius: 50px;
   animation-duration: 1s;
@@ -308,6 +283,19 @@ button {
   animation-duration: 1s;
   position: absolute;
   color: white; }
+
+
+li img {
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+
+nav li {
+  float: right;
+}
+
+
 
 @keyframes fadeIn {
   0% {
@@ -339,9 +327,7 @@ button {
   80% {
     transform: translateY(-10px); }
   100% {
-    transform: translateY(0px);
-    }
-   }
+    transform: translateY(0px); } }
 @keyframes evolution {
   0% {
     opacity: 0; }
